@@ -15,7 +15,9 @@ public class FilterTrendingTopics {
 
         if(filterText.isEmpty() || filterText.isBlank()) throw new IllegalArgumentException("Filter must not be black or empty");
 
-        final List<String> trendingTopics = piutterService.fetchTrendingTopics(); // Dependency. Real call violates unit test principle.
+        // Dependency. A call to the real implementation will violate unit test principle.
+        final List<String> trendingTopics = piutterService.fetchTrendingTopics();
+
         if(trendingTopics == null) return Collections.emptyList();
 
         return trendingTopics.stream()

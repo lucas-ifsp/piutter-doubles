@@ -8,7 +8,7 @@ import java.util.UUID;
 public class PiutterServiceStub implements PiutterService {
 
     @Override
-    public boolean piuweet(UUID userUuid, String text) {
+    public boolean piueet(UUID userUuid, String text) {
         return true;
     }
 

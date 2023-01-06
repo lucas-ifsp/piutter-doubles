@@ -17,7 +17,6 @@ import static org.mockito.Mockito.*;
 public class ListTest {
 
     @Mock List<String> listMock;
-    @Mock Math mathMock;
 
     @Test
     @DisplayName("Test List with matchers in verify calls")
@@ -48,5 +47,4 @@ public class ListTest {
         assertThat(listMock.get(0)).isEqualTo(element); // PASS
         assertThat(listMock.get(99)).isEqualTo(element); // FAIL
     }
-
 }

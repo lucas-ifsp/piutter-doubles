@@ -46,7 +46,6 @@ class FilterTrendingTopicsTest {
         assertThat(sut.filterByContent("text")).isEmpty(); // keep the last defined expectation
     }
 
-
     @Test
     @DisplayName("Should filter topics according to filter using stub")
     void shouldFilterTopicsAccordingToFilterTextUsingStub() {

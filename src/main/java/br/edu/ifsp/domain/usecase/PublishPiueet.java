@@ -16,7 +16,7 @@ public class PublishPiueet {
         if(text.isEmpty() || text.isBlank())
             throw new IllegalArgumentException();
         if(text.length() > 50) return false;
-        return piutterService.piuweet(uuid, text);
+        return piutterService.piueet(uuid, text);
     }
 
     public static String some(){
